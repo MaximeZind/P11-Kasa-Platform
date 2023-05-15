@@ -1,7 +1,9 @@
 import heroImg from '../assets/seaside_cliffs.svg';
 import '../styles/Home.css';
+import data from '../data/data.json';
 
-function App() {
+function Home() {
+  console.log(data);
   return (
     <div className="home">
       <header className="home-header">
@@ -15,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

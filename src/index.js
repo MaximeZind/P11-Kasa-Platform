@@ -4,6 +4,7 @@ import './styles/index.css';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import About from './components/About';
 import Error from './components/Error';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -14,6 +15,7 @@ ReactDOM.render(
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="*" element={<Error />} />
+              <Route path="/about" element={<About />} />
           </Routes>
           <Footer />
       </Router>

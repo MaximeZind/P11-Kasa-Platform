@@ -9,7 +9,7 @@ function Banner() {
       </a>
       <nav className='banner_nav'>
         <a href='./'>Accueil</a>
-        <a href='#'>A Propos</a>
+        <a href='./about'>A Propos</a>
       </nav>
     </header>
 
