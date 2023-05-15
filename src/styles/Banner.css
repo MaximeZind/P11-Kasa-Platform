@@ -1,0 +1,25 @@
+@import './fonts.css';
+@import './colors.css';
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.banner_nav{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.banner_nav a, .banner_nav a:hover, .banner_nav a:visited{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 57px;
+}
+
+.banner_nav a:hover{
+    text-decoration: underline;
+}
