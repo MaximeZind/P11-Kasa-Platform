@@ -1,0 +1,36 @@
+@import './fonts.css';
+@import './colors.css';
+
+.error404{
+    font-family: 'Montserrat';
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 9rem;
+}
+
+.error404 h1{
+    font-size: 18rem;
+    font-weight: bold;
+    margin-top: 9.313rem;
+    margin-bottom: 4.125rem;
+}
+
+.error404 p{
+    font-size: 2.25rem;
+}
+
+.error404 a{
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.error404 a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.error404 a:active, .error404 a:visited{
+    color: var(--primary-color);
+    text-decoration: underline;
+}

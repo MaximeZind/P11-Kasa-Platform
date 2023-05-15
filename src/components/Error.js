@@ -2,7 +2,7 @@ import '../styles/Error.css';
 
 function Error() {
     return (
-      <div className="Error404">
+      <div className="error404">
           <h1>
             404
           </h1>
