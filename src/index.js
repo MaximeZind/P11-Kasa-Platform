@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error';
+import Accommodation from './components/Accommodation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
               <Route path="/" element={<Home />} />
               <Route path="*" element={<Error />} />
               <Route path="/about" element={<About />} />
+              <Route path="/accommodation/:id" element={<Accommodation />} />
           </Routes>
           <Footer />
       </Router>
