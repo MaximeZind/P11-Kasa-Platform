@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.accommodation{
+    margin: 0rem 6.25rem 0rem 6.25rem;
+}
+
+/* ======= CAROUSEL ======= */
+.carousel{
+    width: 100%;
+    height: 25.938rem;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.carousel_pictures{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel_pictures-pic{
+    height: 25.938rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.carousel_pictures-pic p{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 3;
+    margin: 0;
+    text-align: center;
+    align-self: self-end;
+    padding-bottom: 3rem;
+    color: var(--secondary-color);
+    font-size: 1.125rem;
+    font-weight: var(--medium);
+}
+
+
+.carousel_pictures-pic img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_arrow-left{
+    position: absolute;
+    z-index: 4;
+    width: 5rem;
+    margin-top: -15rem;
+    rotate: -90deg;
+}
+
+.carousel_arrow-right{
+    position: absolute;
+    z-index: 4;
+    width: 5rem;
+    margin-top: -15rem;
+    rotate: 90deg;
+    margin-left: 80%;
+}
+
+.carousel_arrow-left:hover, .carousel_arrow-right:hover{
+    cursor: pointer;
+}
+
+/* ======= HEADER ======= */
+
+.accommodation_header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accommodation_header-left h1{
+    font-size: 2.25rem;
+    font-weight: var(--medium);
+    color: var(--primary-color);
+}
+
+.accommodation_header-left p{
+    font-size: 1.125rem;
+    font-weight: var(--medium);
+    color: var(--primary-color);
+}
+
+.accommodation_header-left_tags{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.accommodation_header-left_tags span{
+    font-size: 0.875rem;
+    font-weight: var(--medium);
+    color: var(--secondary-color);
+    padding: 0.125rem 2.5rem ;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.host_profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.host_profile-name p{
+    padding-top: 5px;
+}
+
+.host_profile-name p{
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    font-weight: var(--medium);
+    text-align: right;
+}
+
+.host_profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.host_rating{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.host_rating img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* ======= ACCOMMODATION DETAILS ======= */
+
+.accommodation_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.accommodation_details-dropdown{
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+.accommodation_details-dropdown_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.accommodation_details-dropdown_header h2{
+    font-size: 1.125rem;
+    font-weight: var(--medium);
+}
+
+.accommodation_details-dropdown_header img{
+    height: 32px;
+    width: 32px;
+    rotate: 180deg;
+    margin-right: 10px;
+    filter: var(--secondary-color);
+}
+
+.accommodation_details-dropdown p, .accommodation_details-dropdown ul{
+    padding: 20px;
+    list-style: none;
+    color: var(--primary-color);
+    font-weight: var(--regular);
+}
