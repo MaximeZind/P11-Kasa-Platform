@@ -13,14 +13,61 @@
 .banner_nav{
     font-family: 'Montserrat';
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
 }
 
 .banner_nav a, .banner_nav a:hover, .banner_nav a:visited{
     text-decoration: none;
     color: var(--primary-color);
-    margin-left: 57px;
 }
 
 .banner_nav a:hover{
     text-decoration: underline;
+}
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Tablettes ====== */
+@media screen and (max-width: 1023.5px){
+    .banner{
+        height: 83px;
+        margin: 0rem 3rem 0rem 3rem;    
+    }
+
+    .banner_nav{
+        font-size: 1.125rem;
+        gap: 20px;
+    }
+
+    .kasa-logo{
+        height: 47px;
+    }
+}
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 767.5px){
+
+    .kasa-logo{
+        height: 44px;
+    }
+
+    .banner{
+        height: 83px;
+        margin: 0px 20px;  
+    }
+    
+    .banner_nav{
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 374.5px){
+
+    .kasa-logo{
+        height: 35px;
+    }
+
 }

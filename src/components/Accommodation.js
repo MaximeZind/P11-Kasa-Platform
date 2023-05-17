@@ -1,5 +1,6 @@
 import data from '../data/data.json';
 import { useParams } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import starRed from '../assets/star_red.svg';
 import starGrey from '../assets/star_grey.svg';
 import arrow from '../assets/arrow_white.svg';
@@ -10,9 +11,11 @@ import Dropdown from './Dropdown';
 function Accommodation() {
     const accommodationId = useParams();
     const selectedAccommodation = data.find((accommodation) => accommodation.id === accommodationId.id);
-    const starsRange = [1, 2, 3, 4, 5];
-
     const [slideIndex, setSlideIndex] = useState(0);
+    if (!selectedAccommodation) {
+        return <Navigate to="/404" />;
+    }
+    const starsRange = [1, 2, 3, 4, 5];
     const handlePrevSlide = () => {
         setSlideIndex((prevIndex) => (prevIndex === 0 ? selectedAccommodation.pictures.length - 1 : prevIndex - 1));
       };

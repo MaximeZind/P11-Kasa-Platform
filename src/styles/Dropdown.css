@@ -32,7 +32,7 @@
 }
 
 .dropdown_header h2{
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: var(--medium);
 }
 
@@ -58,4 +58,64 @@
 
 .open > .dropdown_header > img{
     transform: rotate(0deg);
+}
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Tablettes ====== */
+@media screen and (max-width: 1023.5px){
+    
+    .dropdown_header{
+        height: 37px;
+    }
+
+    .dropdown{
+        max-height: 37px;
+    }
+
+    .open{
+        max-height: 400px;
+    }
+
+    .dropdown_header h2{
+        font-size: 1.125rem;
+    }
+
+    .dropdown_header img{
+        height: 24px;
+        width: 24px;
+    }
+
+    .dropdown_content p, .dropdown_content li{
+        font-size: 1.125rem;
+    }
+}
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 767.5px){
+
+    .dropdown_header{
+        height: 30px;
+    }
+
+    .dropdown{
+        max-height: 30px;
+    }
+
+    .open{
+        max-height: 400px;
+    }
+
+    .dropdown_header h2{
+        font-size: 0.813rem;
+    }
+
+    .dropdown_header img{
+        height: 18.42px;
+        width: 18.42px;
+    }
+
+    .dropdown_content p, .dropdown_content li{
+        font-size: 0.75rem;
+    }
 }

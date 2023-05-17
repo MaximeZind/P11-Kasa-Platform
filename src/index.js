@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
@@ -9,7 +9,8 @@ import Error from './components/Error';
 import Accommodation from './components/Accommodation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
       <Router>
         <Banner />
@@ -22,5 +23,4 @@ ReactDOM.render(
           <Footer />
       </Router>
   </React.StrictMode>,
-document.getElementById('root')
 )

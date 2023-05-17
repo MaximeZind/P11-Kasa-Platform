@@ -69,3 +69,35 @@
     background-color: var(--tertiary-color);
     border-radius: 0 0 0.313rem 0.313rem;
 }
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Tablettes ====== */
+@media screen and (max-width: 1024.5px){
+    
+    .about-header{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .about-section{
+        padding: 0;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        gap: 20px;
+    }
+}
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 768.5px){
+    
+    .about-header{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about-section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
