@@ -10,22 +10,40 @@ import Dropdown from './Dropdown';
 function Accommodation() {
     const accommodationId = useParams();
     const selectedAccommodation = data.find((accommodation) => accommodation.id === accommodationId.id);
-    console.log(selectedAccommodation);
     const starsRange = [1, 2, 3, 4, 5];
+
+    const [slideIndex, setSlideIndex] = useState(0);
+    const handlePrevSlide = () => {
+        setSlideIndex((prevIndex) => (prevIndex === 0 ? selectedAccommodation.pictures.length - 1 : prevIndex - 1));
+      };
+    
+      const handleNextSlide = () => {
+        setSlideIndex((prevIndex) => (prevIndex === selectedAccommodation.pictures.length - 1 ? 0 : prevIndex + 1));
+      };
+
+      const containerStyle = {
+        width: `${selectedAccommodation.pictures.length*100}%`,
+        transition: 'transform 0.5s ease',
+        transform: `translateX(-${slideIndex * 100/selectedAccommodation.pictures.length}%)`,
+      };
 
     return (
         <main className="accommodation">
             <div className='carousel'>
-                <div className='carousel_pictures' style={{ width: `${selectedAccommodation.pictures.length * 100}%` }}>
+                <div className='carousel_pictures' style={containerStyle}>
                     {selectedAccommodation.pictures.map((picture, index) =>
                         <div key={index} className='carousel_pictures-pic'>
                             <img src={picture} alt={selectedAccommodation.title}></img>
-                            <p>{index + 1}/{selectedAccommodation.pictures.length}</p>
+                            {selectedAccommodation.pictures.length === 1 ? null :
+                                <p>{index + 1}/{selectedAccommodation.pictures.length}</p>}
                         </div>
                     )}
                 </div>
-                <img src={arrow} className='carousel_arrow-left' alt='flèche gauche'></img>
-                <img src={arrow} className='carousel_arrow-right' alt='flèche droite'></img>
+                {selectedAccommodation.pictures.length === 1 ? null :
+                <div className='carousel_nav'>
+                <img src={arrow} className='carousel_arrow-left' alt='flèche gauche' onClick={handlePrevSlide}></img>
+                <img src={arrow} className='carousel_arrow-right' alt='flèche droite' onClick={handleNextSlide}></img>
+                </div>}
             </div>
             <header className='accommodation_header'>
                 <div className='accommodation_header-left'>

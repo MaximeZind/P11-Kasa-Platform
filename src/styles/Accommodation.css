@@ -20,9 +20,14 @@ body{
     height: 25.938rem;
     overflow: hidden;
     border-radius: 25px;
+    display: grid;
 }
 
 .carousel_pictures{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -51,7 +56,6 @@ body{
     font-weight: var(--medium);
 }
 
-
 .carousel_pictures-pic img{
     grid-column-start: 1;
     grid-column-end: 1;
@@ -62,21 +66,27 @@ body{
     object-fit: cover;
 }
 
+.carousel_nav{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .carousel_arrow-left{
-    position: absolute;
     z-index: 4;
     width: 5rem;
-    margin-top: -15rem;
     rotate: -90deg;
 }
 
 .carousel_arrow-right{
-    position: absolute;
     z-index: 4;
     width: 5rem;
-    margin-top: -15rem;
     rotate: 90deg;
-    margin-left: 80%;
 }
 
 .carousel_arrow-left:hover, .carousel_arrow-right:hover{
