@@ -5,6 +5,8 @@ import starGrey from '../assets/star_grey.svg';
 import arrow from '../assets/arrow_white.svg';
 import { useState } from 'react';
 import '../styles/Accommodation.css';
+import Dropdown from './Dropdown';
+
 function Accommodation() {
     const accommodationId = useParams();
     const selectedAccommodation = data.find((accommodation) => accommodation.id === accommodationId.id);
@@ -49,24 +51,8 @@ function Accommodation() {
                 </div>
             </header>
             <section className='accommodation_details'>
-                <div className='accommodation_details-dropdown'>
-                    <header className='accommodation_details-dropdown_header'>
-                        <h2>Description</h2>
-                        <img src={arrow}></img>
-                    </header>
-                    <p>{selectedAccommodation.description}</p>
-                </div>
-                <div className='accommodation_details-dropdown'>
-                    <header className='accommodation_details-dropdown_header'>
-                        <h2>Équipements</h2>
-                        <img src={arrow}></img>
-                    </header>
-                    <ul>
-                        {selectedAccommodation.equipments.map((equipment, index) =>
-                            <li key={index}>{equipment}</li>
-                        )}
-                    </ul>
-                </div>
+                < Dropdown title = 'Description' content={selectedAccommodation.description} />
+                < Dropdown title = 'Équipements' content={selectedAccommodation.equipments} />
             </section>
         </main>
     );

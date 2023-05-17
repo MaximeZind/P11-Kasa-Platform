@@ -1,3 +1,6 @@
+@import './fonts.css';
+@import './colors.css';
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -112,7 +115,7 @@ body{
     font-size: 0.875rem;
     font-weight: var(--medium);
     color: var(--secondary-color);
-    padding: 0.125rem 2.5rem ;
+    padding: 0.25rem 2.5rem ;
     background-color: var(--primary-color);
     border-radius: 10px;
 }
@@ -161,41 +164,4 @@ body{
     gap: 4.75rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-}
-
-.accommodation_details-dropdown{
-    background-color: var(--tertiary-color);
-    border-radius: 10px;
-}
-
-.accommodation_details-dropdown_header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 52px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding-left: 20px;
-    border-radius: 10px;
-}
-
-.accommodation_details-dropdown_header h2{
-    font-size: 1.125rem;
-    font-weight: var(--medium);
-}
-
-.accommodation_details-dropdown_header img{
-    height: 32px;
-    width: 32px;
-    rotate: 180deg;
-    margin-right: 10px;
-    filter: var(--secondary-color);
-}
-
-.accommodation_details-dropdown p, .accommodation_details-dropdown ul{
-    padding: 20px;
-    list-style: none;
-    color: var(--primary-color);
-    font-weight: var(--regular);
 }
