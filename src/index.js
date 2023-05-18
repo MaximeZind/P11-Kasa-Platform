@@ -22,5 +22,5 @@ root.render(
           </Routes>
           <Footer />
       </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
