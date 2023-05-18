@@ -7,12 +7,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error';
 import Accommodation from './components/Accommodation';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-      <Router>
+      <BrowserRouter>
         <Banner />
           <Routes>
               <Route path="/" element={<Home />} />
@@ -21,6 +21,6 @@ root.render(
               <Route path="/accommodation/:id" element={<Accommodation />} />
           </Routes>
           <Footer />
-      </Router>
+      </BrowserRouter>
   </React.StrictMode>
 )
