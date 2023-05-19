@@ -14,85 +14,6 @@ body{
     margin: 0rem 6.25rem 0rem 6.25rem;
 }
 
-/* ======= CAROUSEL ======= */
-.carousel{
-    width: 100%;
-    height: 25.938rem;
-    overflow: hidden;
-    border-radius: 25px;
-    display: grid;
-}
-
-.carousel_pictures{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.carousel_pictures-pic{
-    height: 25.938rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-}
-
-.carousel_pictures-pic p{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 3;
-    margin: 0;
-    text-align: center;
-    align-self: self-end;
-    padding-bottom: 3rem;
-    color: var(--secondary-color);
-    font-size: 1.125rem;
-    font-weight: var(--medium);
-}
-
-.carousel_pictures-pic img{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel_nav{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carousel_arrow-left{
-    z-index: 4;
-    width: 5rem;
-    rotate: -90deg;
-}
-
-.carousel_arrow-right{
-    z-index: 4;
-    width: 5rem;
-    rotate: 90deg;
-}
-
-.carousel_arrow-left:hover, .carousel_arrow-right:hover{
-    cursor: pointer;
-}
-
 /* ======= HEADER ======= */
 
 .accommodation_header{
@@ -156,18 +77,6 @@ body{
     border-radius: 50%;
 }
 
-.host_rating{
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.host_rating img{
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
 /* ======= ACCOMMODATION DETAILS ======= */
 
 .accommodation_details{
@@ -185,14 +94,6 @@ body{
     
     .accommodation{
         margin: 0 3rem 0 3rem;
-    }
-    
-    .carousel, .carousel_pictures, .carousel_pictures-pic{
-        height: 300px;
-    }
-
-    .carousel_nav img{
-        width: 2.5rem;
     }
 
     .accommodation_header-left h1{
@@ -225,14 +126,6 @@ body{
 
 /* ====== Mobiles ====== */
 @media screen and (max-width: 767.5px){
-
-    .carousel, .carousel_pictures, .carousel_pictures-pic{
-        height: 255px;
-    }
-
-    .carousel_nav img{
-        width: 1.5rem;
-    }
 
     .accommodation{
         margin: 0 20px 0 20px;
@@ -268,24 +161,8 @@ body{
         font-size: 0.625rem;
     }
 
-    .host_rating {
-        gap: 3px;
-    }
-
-    .host_rating img{
-        width: 18px;
-        height: 18px;
-    }
-
     .accommodation_details{
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-}
-
-@media screen and (max-width: 425px){
-
-    .carousel_pictures p{
-        display: none;
     }
 }

@@ -3,24 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Error from './components/Error';
-import Accommodation from './components/Accommodation';
+import Home from './pages/Home';
+import About from './pages/About';
+import Error from './pages/Error';
+import Accommodation from './pages/Accommodation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-        <Banner />
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<Error />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/accommodation/:id" element={<Accommodation />} />
-          </Routes>
-          <Footer />
-      </BrowserRouter>
+    <Banner />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 )

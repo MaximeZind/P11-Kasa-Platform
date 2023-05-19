@@ -1,0 +1,38 @@
+@import './fonts.css';
+@import './colors.css';
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.host_rating{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.host_rating img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 767.5px){
+
+    .host_rating {
+        gap: 3px;
+    }
+
+    .host_rating img{
+        width: 18px;
+        height: 18px;
+    }
+}
