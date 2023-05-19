@@ -1,7 +1,6 @@
 import heroImg from '../assets/mountains.svg';
 import '../styles/About.css';
-import { ReactComponent as Arrow } from '../assets/arrow.svg';
-import Dropdown from './Dropdown';
+import Dropdown from '../components/Dropdown';
 
 function About() {
 
