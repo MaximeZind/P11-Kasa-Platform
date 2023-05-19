@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/P11-Kasa-Platform/static/css/main.2ce13f85.css",
-    "main.js": "/P11-Kasa-Platform/static/js/main.60eacd4c.js",
-    "static/media/mountains.svg": "/P11-Kasa-Platform/static/media/mountains.350395fe77d4f0c88078caaf4c6d8a70.svg",
-    "static/media/seaside_cliffs.svg": "/P11-Kasa-Platform/static/media/seaside_cliffs.90270975c637feb6e59de573442ca213.svg",
-    "static/media/logo.svg": "/P11-Kasa-Platform/static/media/logo.b155131fa8b9f91a4a2958af7541fd8b.svg",
-    "static/media/logo_footer.svg": "/P11-Kasa-Platform/static/media/logo_footer.d7e7e509a499e9e59196ddec9bc9890b.svg",
-    "static/media/arrow.svg": "/P11-Kasa-Platform/static/media/arrow.afe7a426e6c4f5e441947d75195fa6b2.svg",
-    "static/media/star_grey.svg": "/P11-Kasa-Platform/static/media/star_grey.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
-    "static/media/star_red.svg": "/P11-Kasa-Platform/static/media/star_red.30b8963e66a47777ef47296f505567be.svg",
+    "main.css": "/P11-Kasa-Platform/static/css/main.806b7660.css",
+    "main.js": "/P11-Kasa-Platform/static/js/main.f62324be.js",
+    "static/media/mountains.svg": "/P11-Kasa-Platform/static/media/mountains.cffe6eac0aa9b21d6e96cc475e3fc6bf.svg",
+    "static/media/seaside_cliffs.svg": "/P11-Kasa-Platform/static/media/seaside_cliffs.5cf771ed0afb8dedd73b3741e660d275.svg",
+    "static/media/logo.svg": "/P11-Kasa-Platform/static/media/logo.f2dc44e809aab988ba216c8368ef1236.svg",
+    "static/media/logo_footer.svg": "/P11-Kasa-Platform/static/media/logo_footer.b2f6b1e365d730a468c0c852933527f4.svg",
+    "static/media/star_grey.svg": "/P11-Kasa-Platform/static/media/star_grey.afb5c361d3cd347bd08c4f5257c7812e.svg",
+    "static/media/star_red.svg": "/P11-Kasa-Platform/static/media/star_red.7e7a7ebc3dc75fde21243fbcfec8980d.svg",
     "index.html": "/P11-Kasa-Platform/index.html",
-    "static/media/arrow_white.svg": "/P11-Kasa-Platform/static/media/arrow_white.4a0d3650fa868343d6697607ac04673f.svg",
-    "main.2ce13f85.css.map": "/P11-Kasa-Platform/static/css/main.2ce13f85.css.map",
-    "main.60eacd4c.js.map": "/P11-Kasa-Platform/static/js/main.60eacd4c.js.map"
+    "static/media/arrow_white.svg": "/P11-Kasa-Platform/static/media/arrow_white.2da87fba751bb5cc84497bba8489fd7c.svg",
+    "main.806b7660.css.map": "/P11-Kasa-Platform/static/css/main.806b7660.css.map",
+    "main.f62324be.js.map": "/P11-Kasa-Platform/static/js/main.f62324be.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ce13f85.css",
-    "static/js/main.60eacd4c.js"
+    "static/css/main.806b7660.css",
+    "static/js/main.f62324be.js"
   ]
 }
