@@ -2,6 +2,7 @@ import heroImg from '../assets/seaside_cliffs.svg';
 import '../styles/Home.css';
 import data from '../data/data.json';
 import { Link } from 'react-router-dom';
+import Card from '../components/Card';
 
 function Home() {
   return (
@@ -12,14 +13,7 @@ function Home() {
       </header>
       <section className='home-gallery'>
         {data.map((elem) => (
-          <Link to={`/accommodation/${elem.id}`} key={elem.id}>
-          <article className='home-gallery_article'>
-            <img src={elem.cover} alt={elem.title}></img>
-            <header className='home-gallery_article-header'>
-              <h2>{elem.title}</h2>
-            </header>
-          </article>
-          </Link>
+          < Card id = {elem.id} cover = {elem.cover} title = {elem.title} key = {elem.id}/>
         ))}
       </section>
     </div>
