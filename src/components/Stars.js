@@ -1,5 +1,6 @@
 import starRed from '../assets/star_red.svg';
 import starGrey from '../assets/star_grey.svg';
+import React from 'react';
 import '../styles/Stars.css';
 
 function Stars(props) {

@@ -1,4 +1,5 @@
 import data from '../data/data.json';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import '../styles/Accommodation.css';

@@ -1,4 +1,5 @@
 import '../styles/Carousel.css';
+import React from 'react';
 import { useState } from 'react';
 import arrow from '../assets/arrow_white.svg';
 

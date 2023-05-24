@@ -1,7 +1,7 @@
+import React from 'react';
 import heroImg from '../assets/seaside_cliffs.svg';
 import '../styles/Home.css';
 import data from '../data/data.json';
-import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 
 function Home() {

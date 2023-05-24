@@ -1,4 +1,5 @@
 import heroImg from '../assets/mountains.svg';
+import React from 'react';
 import '../styles/About.css';
 import Dropdown from '../components/Dropdown';
 

@@ -10,7 +10,7 @@ module.exports = {
     "overrides": [
     ],
     "parserOptions": {
-        "sourceType": "script"
+        "sourceType": "module"
     },
     "plugins": [
         "react"

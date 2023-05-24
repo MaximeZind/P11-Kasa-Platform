@@ -1,4 +1,5 @@
 import arrow_white from '../assets/arrow_white.svg';
+import React from 'react';
 import '../styles/Dropdown.css';
 
 const handleClick = event => {
