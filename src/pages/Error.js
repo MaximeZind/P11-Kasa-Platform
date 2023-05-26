@@ -1,7 +1,14 @@
 import React from 'react';
+import { useEffect } from 'react';
 import classes from '../styles/Error.module.css';
 
 function Error() {
+
+  const pageTitle = 'Erreur 404'
+  useEffect(() => {
+    document.title =`Kasa - ${pageTitle}`;
+  }, []);
+
     return (
       <div className={classes.error404}>
           <h1>

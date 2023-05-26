@@ -1,10 +1,17 @@
 import React from 'react';
+import { useEffect } from 'react';
 import heroImg from '../assets/seaside_cliffs.svg';
 import classes from '../styles/Home.module.css';
 import data from '../data/data.json';
 import Card from '../components/Card';
 
 function Home() {
+
+  const pageTitle = 'Accueil'
+  useEffect(() => {
+    document.title =`Kasa - ${pageTitle}`;
+  }, []);
+
   return (
     <div className="home">
       <header className={classes.home_header}>
