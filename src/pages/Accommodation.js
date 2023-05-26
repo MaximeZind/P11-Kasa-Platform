@@ -2,6 +2,7 @@ import data from '../data/data.json';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import classes from '../styles/Accommodation.module.css';
 import Dropdown from '../components/Dropdown';
 import Carousel from '../components/Carousel';
@@ -14,6 +15,10 @@ function Accommodation() {
     if (!selectedAccommodation) {
         return <Navigate to="/404" />;
     }
+
+    useEffect(() => {
+        document.title =`Kasa - ${selectedAccommodation.title}`;
+      }, []);
 
     return (
         <main className={classes.accommodation}>

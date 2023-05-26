@@ -11,8 +11,7 @@
     background-color: var(--tertiary-color);
     border-radius: 10px;
     overflow: hidden;
-    max-height: 52px;
-    transition: max-height 0.5s ease-in;
+    transition: max-height 0.4s ease;
 }
 
 .dropdown_header{
@@ -50,14 +49,6 @@
     list-style: none;
     color: var(--primary-color);
     font-weight: var(--regular);
-}
-
-.open{
-    max-height: 400px;
-}
-
-.open > .dropdown_header > img{
-    transform: rotate(0deg);
 }
 
 /*=============== RESPONSIVE ================*/
