@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Error.css';
+import classes from '../styles/Error.module.css';
 
 function Error() {
     return (
-      <div className="error404">
+      <div className={classes.error404}>
           <h1>
             404
           </h1>

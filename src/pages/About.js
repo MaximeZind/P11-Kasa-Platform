@@ -1,6 +1,6 @@
 import heroImg from '../assets/mountains.svg';
 import React from 'react';
-import '../styles/About.css';
+import classes from '../styles/About.module.css';
 import Dropdown from '../components/Dropdown';
 
 function About() {
@@ -11,11 +11,11 @@ function About() {
     const fourthText = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
     
     return (
-        <div className="about">
-            <header className="about-header">
+        <div className={classes.about}>
+            <header className={classes.about_header}>
                 <img src={heroImg} alt='Photo de montagnes partiellement enneigées'></img>
             </header>
-            <section className='about-section'>
+            <section className={classes.about_section}>
                 <Dropdown title='Fiabilité' content={firstText}/>
                 <Dropdown title='Respect' content={secondText}/>
                 <Dropdown title='Service' content={thirdText}/>

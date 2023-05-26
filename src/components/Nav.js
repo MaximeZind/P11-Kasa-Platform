@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
-import '../styles/Banner.css';
+import classes from '../styles/Nav.module.css';
 
-function Banner() {
+function Nav() {
   return (
-    <header className='banner'>
+    <header className={classes.banner}>
       <a href='../'>
         <img src={logo} className="kasa-logo" alt="logo du site Kasa" />
       </a>
-      <nav className='banner_nav'>
+      <nav className={classes.banner_nav}>
         <a href='../'>Accueil</a>
         <a href='../about'>A Propos</a>
       </nav>
@@ -17,4 +17,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Nav;

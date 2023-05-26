@@ -29,7 +29,7 @@ body{
     flex-direction: row;
 }
 
-.carousel_pictures-pic{
+.carousel_pictures_pic{
     height: 25.938rem;
     width: 100%;
     display: grid;
@@ -37,7 +37,7 @@ body{
     grid-template-rows: 100%;
 }
 
-.carousel_pictures-pic p{
+.carousel_pictures_pic p{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -52,7 +52,7 @@ body{
     font-weight: var(--medium);
 }
 
-.carousel_pictures-pic img{
+.carousel_pictures_pic img{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -73,19 +73,19 @@ body{
     align-items: center;
 }
 
-.carousel_arrow-left{
+.carousel_arrow_left{
     z-index: 4;
     width: 5rem;
     rotate: -90deg;
 }
 
-.carousel_arrow-right{
+.carousel_arrow_right{
     z-index: 4;
     width: 5rem;
     rotate: 90deg;
 }
 
-.carousel_arrow-left:hover, .carousel_arrow-right:hover{
+.carousel_arrow_left:hover, .carousel_arrow_right:hover{
     cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ body{
 /* ====== Tablettes ====== */
 @media screen and (max-width: 1023.5px){
     
-    .carousel, .carousel_pictures, .carousel_pictures-pic{
+    .carousel, .carousel_pictures, .carousel_pictures_pic{
         height: 300px;
     }
 
@@ -106,7 +106,7 @@ body{
 /* ====== Mobiles ====== */
 @media screen and (max-width: 767.5px){
 
-    .carousel, .carousel_pictures, .carousel_pictures-pic{
+    .carousel, .carousel_pictures, .carousel_pictures_pic{
         height: 255px;
     }
 

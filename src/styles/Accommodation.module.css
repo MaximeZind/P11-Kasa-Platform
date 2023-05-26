@@ -23,20 +23,20 @@ body{
     justify-content: space-between;
 }
 
-.accommodation_header-left h1{
+.accommodation_header_left h1{
     font-size: 2.25rem;
     font-weight: var(--medium);
     color: var(--primary-color);
 }
 
-.accommodation_header-left p{
+.accommodation_header_left p{
     font-size: 1.125rem;
     font-weight: var(--medium);
     color: var(--primary-color);
     margin-top: 10px;
 }
 
-.accommodation_header-left_tags{
+.accommodation_header_left_tags{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ body{
     gap: 10px;
 }
 
-.accommodation_header-left_tags span{
+.accommodation_header_left_tags span{
     font-size: 0.875rem;
     font-weight: var(--medium);
     color: var(--secondary-color);
@@ -60,11 +60,11 @@ body{
     gap: 10px;
 }
 
-.host_profile-name p{
+.host_profile_name p{
     padding-top: 5px;
 }
 
-.host_profile-name p{
+.host_profile_name p{
     font-size: 1.125rem;
     color: var(--primary-color);
     font-weight: var(--medium);
@@ -96,11 +96,11 @@ body{
         margin: 0 3rem 0 3rem;
     }
 
-    .accommodation_header-left h1{
+    .accommodation_header_left h1{
         font-size: 1.5rem;
     }
 
-    .host_profile-name p{
+    .host_profile_name p{
         font-size: 0.75rem;
     }
 
@@ -113,7 +113,7 @@ body{
         height: 40px;
     }
 
-    .accommodation_header-left_tags span{
+    .accommodation_header_left_tags span{
         padding-left: 35px;
         padding-right: 35px;
         font-size: 0.75rem;
@@ -136,26 +136,26 @@ body{
         align-items: center;
     }
 
-    .accommodation_header-left{
+    .accommodation_header_left{
         width: 100%;
     }
 
-    .accommodation_header-right{
+    .accommodation_header_right{
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    .accommodation_header-left h1{
+    .accommodation_header_left h1{
         font-size: 1.125rem;
     }
 
-    .accommodation_header-left p{
+    .accommodation_header_left p{
         font-size: 0.875rem;
     }
 
-    .accommodation_header-left_tags span{
+    .accommodation_header_left_tags span{
         padding-left: 35px;
         padding-right: 35px;
         font-size: 0.625rem;

@@ -1,6 +1,6 @@
 import arrow_white from '../assets/arrow_white.svg';
 import React from 'react';
-import '../styles/Dropdown.css';
+import classes from '../styles/Dropdown.module.css';
 
 const handleClick = event => {
     event.currentTarget.parentNode.classList.toggle('open');
@@ -9,14 +9,14 @@ const handleClick = event => {
 function Dropdown({title, content}) {
 
     return (
-        <div className='dropdown'>
-            <header className='dropdown_header' onClick={handleClick}>
+        <div className={classes.dropdown}>
+            <header className={classes.dropdown_header} onClick={handleClick}>
                 <h2>
                     {title}
                 </h2>
                 <img src={arrow_white}></img>
             </header>
-            <div  className='dropdown_content'>
+            <div  className={classes.dropdown_content}>
             {typeof content === 'string' ? (
             <p>
                 {content}

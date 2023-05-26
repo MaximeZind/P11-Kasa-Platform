@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import Banner from './components/Banner';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Banner />
+    <Nav />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
