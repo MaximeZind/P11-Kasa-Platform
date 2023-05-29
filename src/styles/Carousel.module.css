@@ -37,11 +37,7 @@ body{
     grid-template-rows: 100%;
 }
 
-.carousel_pictures_pic p{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.carousel_nav p{
     z-index: 3;
     margin: 0;
     text-align: center;
@@ -121,3 +117,36 @@ body{
         display: none;
     }
 }
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+  }
+  
+  .slide {
+    flex: 1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .main-slide {
+    opacity: 1;
+  }
+  
+  .left-slide {
+    left: -100%;
+  }
+  
+  .right-slide {
+    left: 100%;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
