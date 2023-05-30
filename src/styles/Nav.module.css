@@ -10,6 +10,10 @@
     margin: 0rem 6.25rem 0rem 6.25rem;
 }
 
+.kasa_logo:hover{
+    cursor: pointer;
+}
+
 .header_nav{
     font-family: 'Montserrat';
     font-size: 1.5rem;
@@ -18,13 +22,14 @@
     gap: 57px;
 }
 
-.header_nav a, .header_nav a:hover, .header_nav a:visited{
+.header_nav p, .header_nav p:hover{
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.header_nav a:hover{
+.header_nav p:hover{
     text-decoration: underline !important;
+    cursor: pointer;
 }
 
 /*=============== RESPONSIVE ================*/
