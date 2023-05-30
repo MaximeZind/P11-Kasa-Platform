@@ -29,7 +29,7 @@ body{
     grid-row-end: 1;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 33.333333333%);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100%;
 }
 
@@ -47,10 +47,14 @@ body{
     margin: 0;
     text-align: center;
     align-self: self-end;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
     color: var(--secondary-color);
     font-size: 1.125rem;
     font-weight: var(--medium);
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
 }
 
 .carousel_pictures_pic img{
@@ -122,36 +126,3 @@ body{
         display: none;
     }
 }
-
-.slideshow-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 400px;
-  }
-  
-  .slide {
-    flex: 1;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .main-slide {
-    opacity: 1;
-  }
-  
-  .left-slide {
-    left: -100%;
-  }
-  
-  .right-slide {
-    left: 100%;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
