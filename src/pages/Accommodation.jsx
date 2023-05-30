@@ -5,8 +5,6 @@ import { Navigate } from 'react-router-dom';
 import classes from '../styles/Accommodation.module.css';
 import Dropdown from '../components/Dropdown';
 import Carousel from '../components/Carousel';
-// import Stars from '../components/Stars';
-// import Tag from '../components/Tag';
 import Listing from '../components/Listing';
 
 function Accommodation() {
@@ -23,27 +21,6 @@ function Accommodation() {
         <main className={classes.accommodation}>
             < Carousel title={selectedAccommodation.title} pictures={selectedAccommodation.pictures} />
             < Listing selectedAccommodation={selectedAccommodation} />
-            {/* <header className={classes.accommodation_header}>
-                <div className={classes.accommodation_header_left}>
-                    <h1>{selectedAccommodation.title}</h1>
-                    <p>{selectedAccommodation.location}</p>
-                    <div className={classes.accommodation_header_left_tags}>
-                        {selectedAccommodation.tags.map((tag, index) =>
-                        < Tag tag={tag} key={index} />
-                        )}
-                    </div>
-                </div>
-                <div className={classes.accommodation_header_right}>
-                    <div className={classes.host_profile}>
-                        <div className={classes.host_profile_name}>
-                            <p>{selectedAccommodation.host.name.split(' ')[0]}</p>
-                            <p>{selectedAccommodation.host.name.split(' ')[1]}</p>
-                        </div>
-                        <img src={selectedAccommodation.host.picture} alt={selectedAccommodation.host.name}></img>
-                    </div>
-                    < Stars rating={selectedAccommodation.rating} />
-                </div>
-            </header> */}
             <section className={classes.accommodation_details}>
                 < Dropdown title='Description' content={selectedAccommodation.description} />
                 < Dropdown title='Équipements' content={selectedAccommodation.equipments} />

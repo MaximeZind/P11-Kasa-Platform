@@ -77,7 +77,7 @@
         width: 24px;
     }
 
-    .dropdown_content p, .dropdown_content li{
+    .dropdown_content p{
         font-size: 1.125rem;
     }
 }
@@ -106,7 +106,7 @@
         width: 18.42px;
     }
 
-    .dropdown_content p, .dropdown_content li{
+    .dropdown_content p{
         font-size: 0.75rem;
     }
 }
