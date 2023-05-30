@@ -1,7 +1,7 @@
 @import './fonts.css';
 @import './colors.css';
 
-.banner{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +10,7 @@
     margin: 0rem 6.25rem 0rem 6.25rem;
 }
 
-.banner_nav{
+.header_nav{
     font-family: 'Montserrat';
     font-size: 1.5rem;
     display: flex;
@@ -18,30 +18,30 @@
     gap: 57px;
 }
 
-.banner_nav a, .banner_nav a:hover, .banner_nav a:visited{
+.header_nav a, .header_nav a:hover, .header_nav a:visited{
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.banner_nav a:hover{
-    text-decoration: underline;
+.header_nav a:hover{
+    text-decoration: underline !important;
 }
 
 /*=============== RESPONSIVE ================*/
 
 /* ====== Tablettes ====== */
 @media screen and (max-width: 1023.5px){
-    .banner{
+    .header{
         height: 83px;
         margin: 0rem 3rem 0rem 3rem;    
     }
 
-    .banner_nav{
+    .header_nav{
         font-size: 1.125rem;
         gap: 20px;
     }
 
-    .kasa-logo{
+    .kasa_logo{
         height: 47px;
     }
 }
@@ -49,16 +49,16 @@
 /* ====== Mobiles ====== */
 @media screen and (max-width: 767.5px){
 
-    .kasa-logo{
+    .kasa_logo{
         height: 44px;
     }
 
-    .banner{
+    .header{
         height: 83px;
         margin: 0px 20px;  
     }
     
-    .banner_nav{
+    .header_nav{
         font-size: 0.75rem;
         text-transform: uppercase;
     }
@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 374.5px){
 
-    .kasa-logo{
+    .kasa_logo{
         height: 35px;
     }
 
