@@ -44,15 +44,6 @@ body{
     gap: 10px;
 }
 
-.accommodation_header_left_tags span{
-    font-size: 0.875rem;
-    font-weight: var(--medium);
-    color: var(--secondary-color);
-    padding: 0.25rem 2.5rem ;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-}
-
 .host_profile{
     display: flex;
     flex-direction: row;
@@ -113,12 +104,6 @@ body{
         height: 40px;
     }
 
-    .accommodation_header_left_tags span{
-        padding-left: 35px;
-        padding-right: 35px;
-        font-size: 0.75rem;
-    }
-
     .accommodation_details{
         gap: 30px;
     }
@@ -153,12 +138,6 @@ body{
 
     .accommodation_header_left p{
         font-size: 0.875rem;
-    }
-
-    .accommodation_header_left_tags span{
-        padding-left: 35px;
-        padding-right: 35px;
-        font-size: 0.625rem;
     }
 
     .accommodation_details{

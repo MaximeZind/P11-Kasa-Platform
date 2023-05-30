@@ -1,26 +1,10 @@
-import data from '../data/data.json';
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
-import classes from '../styles/Accommodation.module.css';
-import Dropdown from '../components/Dropdown';
-import Carousel from '../components/Carousel';
+import classes from '../styles/Listing.module.css';
 import Stars from '../components/Stars';
 import Tag from '../components/Tag';
 
-function Accommodation() {
-
-    const accommodationId = useParams();
-    const selectedAccommodation = data.find((accommodation) => accommodation.id === accommodationId.id);
-    if (!selectedAccommodation) {
-        return <Navigate to="/404" />;
-    }
-
-    document.title = `Kasa - ${selectedAccommodation.title}`;
-
+function Listing() {
     return (
-        <main className={classes.accommodation}>
-            < Carousel title={selectedAccommodation.title} pictures={selectedAccommodation.pictures} />
             <header className={classes.accommodation_header}>
                 <div className={classes.accommodation_header_left}>
                     <h1>{selectedAccommodation.title}</h1>
@@ -42,12 +26,7 @@ function Accommodation() {
                     < Stars rating={selectedAccommodation.rating} />
                 </div>
             </header>
-            <section className={classes.accommodation_details}>
-                < Dropdown title='Description' content={selectedAccommodation.description} />
-                < Dropdown title='Équipements' content={selectedAccommodation.equipments} />
-            </section>
-        </main>
     );
 }
 
-export default Accommodation;
+export default Listing;

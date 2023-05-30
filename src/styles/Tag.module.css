@@ -1,0 +1,30 @@
+
+.tag{
+    font-size: 0.875rem;
+    font-weight: var(--medium);
+    color: var(--secondary-color);
+    padding: 0.25rem 2.5rem ;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+/*=============== RESPONSIVE ================*/
+
+/* ====== Tablettes ====== */
+@media screen and (max-width: 1023.5px){
+
+    .tag{
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 0.75rem;
+    }
+}
+
+/* ====== Mobiles ====== */
+@media screen and (max-width: 767.5px){
+    .tag{
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 0.625rem;
+    }
+}
