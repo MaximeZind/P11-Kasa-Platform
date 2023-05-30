@@ -2,7 +2,6 @@ import data from '../data/data.json';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-// import { useEffect } from 'react';
 import classes from '../styles/Accommodation.module.css';
 import Dropdown from '../components/Dropdown';
 import Carousel from '../components/Carousel';
@@ -16,13 +15,11 @@ function Accommodation() {
         return <Navigate to="/404" />;
     }
 
-    // useEffect(() => {
-        document.title =`Kasa - ${selectedAccommodation.title}`;
-    //   }, []);
+    document.title = `Kasa - ${selectedAccommodation.title}`;
 
     return (
         <main className={classes.accommodation}>
-            < Carousel title = {selectedAccommodation.title} pictures = {selectedAccommodation.pictures} />
+            < Carousel title={selectedAccommodation.title} pictures={selectedAccommodation.pictures} />
             <header className={classes.accommodation_header}>
                 <div className={classes.accommodation_header_left}>
                     <h1>{selectedAccommodation.title}</h1>
@@ -41,12 +38,12 @@ function Accommodation() {
                         </div>
                         <img src={selectedAccommodation.host.picture} alt={selectedAccommodation.host.name}></img>
                     </div>
-                    < Stars rating = {selectedAccommodation.rating}/>
+                    < Stars rating={selectedAccommodation.rating} />
                 </div>
             </header>
             <section className={classes.accommodation_details}>
-                < Dropdown title = 'Description' content={selectedAccommodation.description} />
-                < Dropdown title = 'Équipements' content={selectedAccommodation.equipments} />
+                < Dropdown title='Description' content={selectedAccommodation.description} />
+                < Dropdown title='Équipements' content={selectedAccommodation.equipments} />
             </section>
         </main>
     );
