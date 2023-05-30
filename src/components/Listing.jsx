@@ -3,7 +3,7 @@ import classes from '../styles/Listing.module.css';
 import Stars from '../components/Stars';
 import Tag from '../components/Tag';
 
-function Listing() {
+function Listing({selectedAccommodation}) {
     return (
             <header className={classes.accommodation_header}>
                 <div className={classes.accommodation_header_left}>

@@ -5,8 +5,9 @@ import { Navigate } from 'react-router-dom';
 import classes from '../styles/Accommodation.module.css';
 import Dropdown from '../components/Dropdown';
 import Carousel from '../components/Carousel';
-import Stars from '../components/Stars';
-import Tag from '../components/Tag';
+// import Stars from '../components/Stars';
+// import Tag from '../components/Tag';
+import Listing from '../components/Listing';
 
 function Accommodation() {
 
@@ -21,7 +22,8 @@ function Accommodation() {
     return (
         <main className={classes.accommodation}>
             < Carousel title={selectedAccommodation.title} pictures={selectedAccommodation.pictures} />
-            <header className={classes.accommodation_header}>
+            < Listing selectedAccommodation={selectedAccommodation} />
+            {/* <header className={classes.accommodation_header}>
                 <div className={classes.accommodation_header_left}>
                     <h1>{selectedAccommodation.title}</h1>
                     <p>{selectedAccommodation.location}</p>
@@ -41,7 +43,7 @@ function Accommodation() {
                     </div>
                     < Stars rating={selectedAccommodation.rating} />
                 </div>
-            </header>
+            </header> */}
             <section className={classes.accommodation_details}>
                 < Dropdown title='Description' content={selectedAccommodation.description} />
                 < Dropdown title='Équipements' content={selectedAccommodation.equipments} />
