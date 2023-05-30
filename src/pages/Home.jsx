@@ -1,16 +1,14 @@
 import React from 'react';
-import { useEffect } from 'react';
 import heroImg from '../assets/seaside_cliffs.svg';
 import classes from '../styles/Home.module.css';
+import Gallery from '../components/Gallery';
 import data from '../data/data.json';
-import Card from '../components/Card';
+// import Card from '../components/Card';
 
 function Home() {
 
   const pageTitle = 'Accueil'
-  useEffect(() => {
-    document.title =`Kasa - ${pageTitle}`;
-  }, []);
+  document.title =`Kasa - ${pageTitle}`;
 
   return (
     <div className="home">
@@ -18,11 +16,7 @@ function Home() {
         <img src={heroImg} alt='Photo de falaises en bord de mer agitée'></img>
         <h1>Chez vous, partout et ailleurs</h1>
       </header>
-      <section className={classes.home_gallery}>
-        {data.map((elem) => (
-          < Card id = {elem.id} cover = {elem.cover} title = {elem.title} key = {elem.id}/>
-        ))}
-      </section>
+      <Gallery data = {data} />
     </div>
   );
 }

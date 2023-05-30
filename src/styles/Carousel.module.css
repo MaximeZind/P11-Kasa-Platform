@@ -118,11 +118,8 @@ body{
     .carousel_nav img{
         width: 1.5rem;
     }
-}
 
-@media screen and (max-width: 425px){
-
-    .carousel_pictures p{
+    .carousel_nav p{
         display: none;
     }
 }
