@@ -12,11 +12,14 @@ body{
 
 /* ======= CAROUSEL ======= */
 .carousel{
-    width: 100%;
+    --container-width: 100%;
+    box-sizing: content-box;
     height: 25.938rem;
     overflow: hidden;
     border-radius: 25px;
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 }
 
 .carousel_pictures{
@@ -25,8 +28,9 @@ body{
     grid-row-start: 1;
     grid-row-end: 1;
     height: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 33.333333333%);
+    grid-template-rows: 100%;
 }
 
 .carousel_pictures_pic{
@@ -35,6 +39,7 @@ body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
+    object-fit: cover;
 }
 
 .carousel_nav p{

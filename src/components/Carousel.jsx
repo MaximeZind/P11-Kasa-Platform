@@ -3,21 +3,16 @@ import React from 'react';
 import { useState } from 'react';
 import arrow from '../assets/arrow_white.svg';
 
-function Carousel(props) {
-    const [slideIndex, setSlideIndex] = useState(0);
-    const pictures = props.pictures;
-    const startingPictures = [pictures[pictures.length-1], pictures[0], pictures[1]];
-    console.log(startingPictures);
-    const title = props.title;
-    console.log(title);
+function Carousel({pictures, title}) {
 
     const containerStyle = {
         width: `300%`,
-        left: '-100%',
-        position: 'relative'
+        transition: 'transform 0.5s ease',
+        transform: `translateX(-${100/3}%)`,
     };
 
-
+    const [slideIndex, setSlideIndex] = useState(0);
+    
     const handlePrevSlide = () => {
         setSlideIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
     };
@@ -25,14 +20,15 @@ function Carousel(props) {
     const handleNextSlide = () => {
         setSlideIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
     };
+    
     return (
         <div className={classes.carousel + ' hello'}>
             <div className={classes.carousel_pictures} style={containerStyle}>
-                {startingPictures.map((picture, index) =>
-                    <div key={index} className={classes.carousel_pictures_pic}>
-                        <img src={picture} alt={title}></img>
-                    </div>
-                )}
+                {pictures[slideIndex-1] ? <img className={classes.carousel_pictures_pic} src={pictures[slideIndex-1]} alt={title}></img> : 
+                <img className={classes.carousel_pictures_pic} src={pictures[pictures.length - 1]} alt={title}></img>}
+                <img className={classes.carousel_pictures_pic} src={pictures[slideIndex]} alt={title}></img>
+                {pictures[slideIndex+1] ? <img className={classes.carousel_pictures_pic} src={pictures[slideIndex+1]} alt={title}></img> : 
+                <img className={classes.carousel_pictures_pic} src={pictures[0]} alt={title}></img>}
             </div>
             {pictures.length === 1 ? null :
                 <div className={classes.carousel_nav}>
@@ -46,11 +42,11 @@ function Carousel(props) {
     // const [slideIndex, setSlideIndex] = useState(0);
 
     // const handlePrevSlide = () => {
-        // setSlideIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
+    //     setSlideIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
     // };
 
     // const handleNextSlide = () => {
-        // setSlideIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
+    //     setSlideIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
     // };
 
     // console.log(pictures);
