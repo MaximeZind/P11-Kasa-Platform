@@ -6,7 +6,6 @@ import classes from '../styles/Nav.module.css';
 function Nav() {
 
   const location = useLocation().pathname;
-  console.log(location);
 
   return (
     <header className={classes.header}>
