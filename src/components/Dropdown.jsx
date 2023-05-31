@@ -1,19 +1,16 @@
 import arrow_white from '../assets/arrow_white.svg';
 import React from 'react';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect} from 'react';
 import classes from '../styles/Dropdown.module.css';
 
 function Dropdown({ title, content }) {
 
-  console.log(content)
-
   const contentRef = useRef(0);
   const headerRef = useRef(0);
-  const [headerHeight, setHeaderHeight] = useState(30);
+  const [headerHeight, setHeaderHeight] = useState(52);
   const scrollHeight = contentRef.current.clientHeight;
   const dropdownHeight = headerHeight + scrollHeight;
   const [isOpen, setOpenClose] = useState(false);
-
 
   useEffect(() => {
     const handleResize = () => {

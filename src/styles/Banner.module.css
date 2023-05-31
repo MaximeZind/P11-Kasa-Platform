@@ -44,11 +44,11 @@
 /* ====== Tablettes ====== */
 @media screen and (max-width: 1023.5px){
     
-    .home_header {
+    .banner {
         margin: 0rem 3rem 2rem 3rem;    
     }
     
-    .home_header h1{
+    .banner h1{
         font-size: 2.25rem;
     }
 
@@ -57,17 +57,17 @@
 /* ====== Mobiles ====== */
 @media screen and (max-width: 767.5px){
     
-    .home_header {
+    .banner {
         margin: 0 20px 20px 20px;    
         border-radius: 10px;
         height: 111px;
     }
 
-    .home_header img{
+    .banner img{
         height: 111px;
     }
     
-    .home_header h1{
+    .banner h1{
         font-size: 1.5rem;
         text-align: left;
         padding-left: 20px;

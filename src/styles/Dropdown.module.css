@@ -57,7 +57,7 @@
 @media screen and (max-width: 1023.5px){
     
     .dropdown_header{
-        height: 37px;
+        height: 37px !important;
     }
 
     .dropdown{
@@ -86,7 +86,7 @@
 @media screen and (max-width: 767.5px){
 
     .dropdown_header{
-        height: 30px;
+        height: 30px !important;
     }
 
     .dropdown{

@@ -37,7 +37,7 @@ function Carousel({ pictures, title }) {
         setTimeout(() => {
             setIsTransitionEnabled(true);
             setIsButtonDisabled(false);
-        }, animationDuration+25);
+        }, animationDuration+30);
     };
     
     //Vers le slide suivant
@@ -63,7 +63,7 @@ function Carousel({ pictures, title }) {
         setTimeout(() => { //Reset transition et activation du bouton 25ms après l'animation (moins d'écart crée un bug)
             setIsTransitionEnabled(true);
             setIsButtonDisabled(false);
-        }, animationDuration+25);
+        }, animationDuration+30);
     };
 
     return (
