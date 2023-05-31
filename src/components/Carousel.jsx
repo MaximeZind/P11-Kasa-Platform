@@ -16,7 +16,7 @@ function Carousel({ pictures, title }) {
 
     //Vers le slide précédent
     const handlePrevSlide = () => {
-        if (isButtonDisabled){
+        if (isButtonDisabled) {
             return
         }
         setIsButtonDisabled(true); //Empêche de cliquer de nouveau sur la flèche
@@ -37,12 +37,12 @@ function Carousel({ pictures, title }) {
         setTimeout(() => {
             setIsTransitionEnabled(true);
             setIsButtonDisabled(false);
-        }, animationDuration+30);
+        }, animationDuration + 30);
     };
-    
+
     //Vers le slide suivant
     const handleNextSlide = () => {
-        if (isButtonDisabled){
+        if (isButtonDisabled) {
             return
         }
         setIsButtonDisabled(true); //Empêche de cliquer de nouveau sur la flèche
@@ -56,14 +56,14 @@ function Carousel({ pictures, title }) {
             setSlideIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1)); // modifie l'index des photos affichées
             setContainerStyle({ //reset le containerStyle (pour que les images soient de nouveau centrées après l'animation)
                 ...containerStyle,
-                transform: `translateX(-${100 / 3}%)`, 
+                transform: `translateX(-${100 / 3}%)`,
             });
         }, animationDuration);
 
         setTimeout(() => { //Reset transition et activation du bouton 25ms après l'animation (moins d'écart crée un bug)
             setIsTransitionEnabled(true);
             setIsButtonDisabled(false);
-        }, animationDuration+30);
+        }, animationDuration + 30);
     };
 
     return (
@@ -72,7 +72,7 @@ function Carousel({ pictures, title }) {
                 className={classes.carousel_pictures}
                 style={{
                     ...containerStyle,
-                    transition: isTransitionEnabled ? `transform ${animationDuration/1000}s ease` : 'none',
+                    transition: isTransitionEnabled ? `transform ${animationDuration / 1000}s ease` : 'none',
                 }}
             >
                 {pictures[slideIndex - 1] ? <img className={classes.carousel_pictures_pic} src={pictures[slideIndex - 1]} alt={title}></img> :
@@ -84,7 +84,14 @@ function Carousel({ pictures, title }) {
             {pictures.length === 1 ? null : //Ne s'affiche pas s'il y a seulement une image
                 <div className={classes.carousel_nav}>
                     <img src={arrow} className={classes.carousel_arrow_left} alt='Image précédente' onClick={handlePrevSlide}></img>
-                    <p>{slideIndex + 1}/{pictures.length}</p>
+                    <div className={classes.carousel_nav_midNav}>
+                        <p>{slideIndex + 1}/{pictures.length}</p>
+                        <div className={classes.carousel_nav_midNav_bullets}>
+                            {pictures.map((_, index) =>
+                                <span key={index} className={`${classes.bullet} ${index === slideIndex ? classes.active : ''}`} onClick={() => setSlideIndex(index)}></span>
+                            )}
+                        </div>
+                    </div>
                     <img src={arrow} className={classes.carousel_arrow_right} alt='Image suivante' onClick={handleNextSlide}></img>
                 </div>}
         </div>
