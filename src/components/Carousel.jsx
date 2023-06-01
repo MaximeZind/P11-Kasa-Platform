@@ -32,9 +32,12 @@ function Carousel({ pictures, title }) {
                 ...containerStyle,
                 transform: `translateX(-${100 / 3}%)`
             });
+        }, animationDuration);
+
+        setTimeout(() => {
             setIsTransitionEnabled(true);
             setIsButtonDisabled(false);
-        }, animationDuration);
+        }, animationDuration + 30);
     };
 
     //Vers le slide suivant
