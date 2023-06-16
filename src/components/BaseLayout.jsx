@@ -1,12 +1,13 @@
 import React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
-function BaseLayout({ children }) {
+function BaseLayout() {
     return (
       <>
         <Nav />
-        {children}
+        <Outlet />
         <Footer />
       </>
     );
