@@ -1,10 +1,11 @@
 import arrow_white from '../assets/arrow_white.svg';
-import React, { useState } from 'react';
-import classes from '../styles/Dropdown.module.css';
+import React, { useState, useRef } from 'react';
+import classes from '../styles/Collapse.module.css';
 
 function Collapse({ title, content }) {
 
   const [isOpen , setOpenClose] = useState(false);
+  const dropdownContent = useRef(null);
 
   return (
     <div className={classes.dropdown}>
@@ -14,7 +15,7 @@ function Collapse({ title, content }) {
         </h2>
         <img src={arrow_white} style={{ transform: isOpen && 'rotate(0deg)' }}></img>
       </header>
-      <div className={classes.dropdown_content} style={{maxHeight: isOpen? `none` : `0px`}}>
+      <div ref={dropdownContent} className={classes.dropdown_content} style={{maxHeight: isOpen? `${dropdownContent.current.scrollHeight}px` : `0px`}}>
         {typeof content === 'string' ? (
           <p>
             {content}
