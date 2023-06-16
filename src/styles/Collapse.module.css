@@ -7,10 +7,6 @@
     font-family: 'Montserrat';
 }
 
-.dropdown{
-    border-radius: 10px;
-}
-
 .dropdown_header{
     display: flex;
     flex-direction: row;
@@ -50,6 +46,7 @@
 
 .dropdown_content p, .dropdown_content ul{
     padding: 20px;
+    font-size: 1.125rem;
     list-style: none;
     color: var(--primary-color);
     font-weight: var(--regular);
@@ -61,11 +58,7 @@
 @media screen and (max-width: 1023.5px){
     
     .dropdown_header{
-        height: 37px !important;
-    }
-
-    .dropdown{
-        max-height: 37px;
+        height: 37px;
     }
 
     .dropdown_header h2{
@@ -86,11 +79,7 @@
 @media screen and (max-width: 767.5px){
 
     .dropdown_header{
-        height: 30px !important;
-    }
-
-    .dropdown{
-        max-height: 30px;
+        height: 30px;
     }
 
     .dropdown_header h2{
