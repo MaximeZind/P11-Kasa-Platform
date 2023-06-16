@@ -4,8 +4,7 @@ import logo from '../assets/logo.svg';
 import classes from '../styles/Nav.module.css';
 
 function Nav() {
-
-  // const location = useLocation().pathname;
+  
   const navigate = useNavigate();
 
   return (

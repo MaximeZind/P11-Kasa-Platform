@@ -8,10 +8,7 @@
 }
 
 .dropdown{
-    background-color: var(--tertiary-color);
     border-radius: 10px;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
 }
 
 .dropdown_header{
@@ -44,6 +41,13 @@
     transition: transform 0.3s ease-in;
 }
 
+.dropdown_content {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
 .dropdown_content p, .dropdown_content ul{
     padding: 20px;
     list-style: none;
@@ -62,10 +66,6 @@
 
     .dropdown{
         max-height: 37px;
-    }
-
-    .open{
-        max-height: 400px;
     }
 
     .dropdown_header h2{
@@ -91,10 +91,6 @@
 
     .dropdown{
         max-height: 30px;
-    }
-
-    .open{
-        max-height: 400px;
     }
 
     .dropdown_header h2{
