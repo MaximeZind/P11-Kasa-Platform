@@ -22,12 +22,12 @@
     gap: 57px;
 }
 
-.header_nav p, .header_nav p:hover{
+.header_nav a, .header_nav a:hover{
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.header_nav p:hover{
+.header_nav a:hover{
     text-decoration: underline !important;
     cursor: pointer;
 }
