@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classes from '../styles/Listing.module.css';
 import Stars from '../components/Stars';
 import Tag from '../components/Tag';
@@ -28,5 +29,9 @@ function Listing({selectedAccommodation}) {
             </header>
     );
 }
+
+Listing.propTypes = {
+    selectedAccommodation: PropTypes.array.isRequired,
+  };
 
 export default Listing;

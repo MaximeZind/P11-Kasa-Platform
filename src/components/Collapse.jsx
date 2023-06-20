@@ -1,5 +1,6 @@
 import arrow_white from '../assets/arrow_white.svg';
 import React, { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import classes from '../styles/Collapse.module.css';
 
 function Collapse({ title, content }) {
@@ -30,5 +31,13 @@ function Collapse({ title, content }) {
     </div>
   );
 }
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+  ]).isRequired,
+};
 
 export default Collapse;

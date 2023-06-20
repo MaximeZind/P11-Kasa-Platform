@@ -1,5 +1,6 @@
 import classes from '../styles/Carousel.module.css';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import arrow from '../assets/arrow_white.svg';
 
@@ -96,7 +97,11 @@ function Carousel({ pictures, title }) {
                 </div>}
         </div>
     )
-
 }
+
+Carousel.propTypes = {
+    pictures: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired,
+  };
 
 export default Carousel;

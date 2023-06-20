@@ -1,5 +1,6 @@
 import classes from '../styles/Card.module.css';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 function Card({id, cover, title}) {
@@ -15,5 +16,12 @@ function Card({id, cover, title}) {
             </article>
     );
 }
+
+Card.propTypes = {
+    id: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  };
+
 
 export default Card;

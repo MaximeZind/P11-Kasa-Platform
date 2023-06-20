@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classes from '../styles/Gallery.module.css';
 import Card from '../components/Card';
 import {dataId, dataTitle, dataCover} from '../utils/import.jsx'
@@ -13,5 +14,9 @@ function Gallery(data) {
       </section>
   );
 }
+
+Gallery.propTypes = {
+  data: PropTypes.object,
+};
 
 export default Gallery;
