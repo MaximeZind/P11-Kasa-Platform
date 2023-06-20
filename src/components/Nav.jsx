@@ -7,20 +7,20 @@ function Nav() {
 
   return (
     <header className={classes.header}>
-      <NavLink to="../">
+      <NavLink to="/">
       <img src={logo} className={classes.kasa_logo} alt="logo du site Kasa" />
       </NavLink>
       <nav className={classes.header_nav}>
-        <NavLink to="../" style={({ isActive }) => {
+        <NavLink to="/" style={({ isActive }) => {
             return {
-              textDecoration: isActive ? `underline` : 'auto',
+              textDecoration: isActive ? `underline` : 'none',
             };
           }}>
           Accueil
         </NavLink>
-        <NavLink to="../about" style={({ isActive }) => {
+        <NavLink to="/about" style={({ isActive }) => {
             return {
-              textDecoration: isActive ? `underline` : 'auto',
+              textDecoration: isActive ? `underline` : 'none',
             };
           }}
         >
