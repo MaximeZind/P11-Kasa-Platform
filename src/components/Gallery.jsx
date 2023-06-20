@@ -16,7 +16,7 @@ function Gallery(data) {
 }
 
 Gallery.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
 
 export default Gallery;

@@ -31,7 +31,7 @@ function Listing({selectedAccommodation}) {
 }
 
 Listing.propTypes = {
-    selectedAccommodation: PropTypes.array.isRequired,
+    selectedAccommodation: PropTypes.object.isRequired,
   };
 
 export default Listing;
