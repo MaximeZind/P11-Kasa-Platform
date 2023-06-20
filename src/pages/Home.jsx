@@ -7,7 +7,7 @@ import Banner from '../components/Banner';
 
 function Home() {
 
-  const pageTitle = 'Accueil'
+  const pageTitle = 'Accueil';
   document.title =`Kasa - ${pageTitle}`;
   const data = importData();
 

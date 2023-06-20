@@ -24,7 +24,7 @@ function Listing({selectedAccommodation}) {
                         </div>
                         <img src={selectedAccommodation.host.picture} alt={selectedAccommodation.host.name}></img>
                     </div>
-                    < Stars rating={selectedAccommodation.rating} />
+                    < Stars rating={Number(selectedAccommodation.rating)} />
                 </div>
             </header>
     );
