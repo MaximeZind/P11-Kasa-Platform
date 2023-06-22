@@ -1,4 +1,4 @@
-import {getLogements} from '../utils/import';
+import { getLogement } from '../utils/accommodationUtils';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
@@ -9,9 +9,8 @@ import Listing from '../components/Listing';
 
 function Accommodation() {
 
-    const data = getLogements();
-    const accommodationId = useParams();
-    const selectedAccommodation = data.find((accommodation) => accommodation.id === accommodationId.id);
+    const accommodationId = useParams().id;
+    const selectedAccommodation = getLogement(accommodationId);
     if (!selectedAccommodation) {
         return <Navigate to="/404" />;
     }
