@@ -24,14 +24,14 @@ function Listing({selectedAccommodation}) {
                         </div>
                         <img src={selectedAccommodation.host.picture} alt={selectedAccommodation.host.name}></img>
                     </div>
-                    < Stars rating={selectedAccommodation.rating} />
+                    < Stars rating={parseInt(selectedAccommodation.rating)} />
                 </div>
             </header>
     );
 }
 
 Listing.propTypes = {
-    selectedAccommodation: PropTypes.array.isRequired,
+    selectedAccommodation: PropTypes.object.isRequired,
   };
 
 export default Listing;

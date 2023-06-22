@@ -3,13 +3,13 @@ import React from 'react';
 import classes from '../styles/About.module.css';
 import Collapse from '../components/Collapse';
 import Banner from '../components/Banner';
-import {importAboutText} from '../utils/import';
+import {getAboutText} from '../utils/import';
 
 function About() {
 
     const pageTitle = 'A Propos';
     document.title = `Kasa - ${pageTitle}`;
-    const aboutText = importAboutText();
+    const aboutText = getAboutText();
 
     return (
         <div className={classes.about}>

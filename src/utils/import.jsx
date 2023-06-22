@@ -3,24 +3,10 @@ import aboutText from '../data/aboutText.json';
 
 
 // Fonction pour importer la data
-export function importData() {
+export function getLogements() {
     return data;
 }
 
-export function importAboutText() {
+export function getAboutText() {
     return aboutText;
-}
-
-// Fonctions pour traiter chaque élément
-export function dataId(elem) {
-    const id = elem.id;
-    return id;
-}
-export function dataCover(elem) {
-    const cover = elem.cover;
-    return cover;
-}
-export function dataTitle(elem) {
-    const title = elem.title;
-    return title;
 }

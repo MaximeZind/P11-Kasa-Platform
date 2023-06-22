@@ -16,7 +16,7 @@ function Error() {
       <p>
         {errorText}
       </p>
-      <a href="./">{linkText}</a>
+      <a href="/">{linkText}</a>
     </div>
   );
 }
