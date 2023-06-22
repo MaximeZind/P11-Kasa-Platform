@@ -2,7 +2,7 @@ import React from 'react';
 import heroImg from '../assets/seaside_cliffs.svg';
 import classes from '../styles/Home.module.css';
 import Gallery from '../components/Gallery';
-import {getLogements} from '../utils/import';
+import {getLogements} from '../utils/getAccommodations';
 import Banner from '../components/Banner';
 
 function Home() {

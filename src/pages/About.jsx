@@ -3,7 +3,7 @@ import React from 'react';
 import classes from '../styles/About.module.css';
 import Collapse from '../components/Collapse';
 import Banner from '../components/Banner';
-import {getAboutText} from '../utils/import';
+import {getAboutText} from '../utils/getAboutText';
 
 function About() {
 

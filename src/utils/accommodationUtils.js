@@ -1,4 +1,4 @@
-import { getLogements } from "./import";
+import { getLogements } from "./getAccommodations";
 
 const accommodations = getLogements();
 
