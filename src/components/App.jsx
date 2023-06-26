@@ -1,9 +1,9 @@
 import React from 'react';
 import BaseLayout from './BaseLayout';
-import Home from '../pages/Home';
-import About from '../pages/About';
+import Home, { loaderHome } from '../pages/Home';
+import About, { loaderAbout } from '../pages/About';
 import Error from '../pages/Error';
-import Accommodation from '../pages/Accommodation';
+import Accommodation, { loaderAccommodation } from '../pages/Accommodation';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -11,9 +11,15 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<BaseLayout />} >
-                    <Route index element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/accommodation/:id" element={<Accommodation />} />
+                    <Route index 
+                    element={<Home />} 
+                    loader={loaderHome}/>
+                    <Route path="/about" 
+                    element={<About />} 
+                    loader={loaderAbout}/>
+                    <Route path="/accommodation/:id" 
+                    element={<Accommodation />} 
+                    loader={loaderAccommodation}/>
                     <Route path="*" element={<Error />} />
                 </ Route>
             </Routes>

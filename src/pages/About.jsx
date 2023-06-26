@@ -3,7 +3,7 @@ import React from 'react';
 import classes from '../styles/About.module.css';
 import Collapse from '../components/Collapse';
 import Banner from '../components/Banner';
-import {importAboutText} from '../utils/import';
+import {importAboutText} from '../utils/getAboutText';
 
 function About() {
 
@@ -22,4 +22,8 @@ function About() {
     );
 }
 
+export const loaderAbout = async () => {
+    const res = await fetch(importAboutText());
+    return res.json();
+}
 export default About;
