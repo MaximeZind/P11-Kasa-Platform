@@ -20,7 +20,7 @@ function Accommodation() {
     return (
         <main className={classes.accommodation}>
             < Carousel title={selectedAccommodation.title} pictures={selectedAccommodation.pictures} />
-            < Listing selectedAccommodation={selectedAccommodation} />
+            < Listing title={selectedAccommodation.title} location={selectedAccommodation.location} tags={selectedAccommodation.tags} name={selectedAccommodation.host.name} picture={selectedAccommodation.host.picture} rating={selectedAccommodation.rating}/>
             <section className={classes.accommodation_details}>
                 < Collapse title='Description' content={selectedAccommodation.description} />
                 < Collapse title='Équipements' content={selectedAccommodation.equipments} />
