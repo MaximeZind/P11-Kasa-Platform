@@ -1,19 +1,19 @@
 import classes from '../styles/Card.module.css';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Card({id, cover, title}) {
 
-    const navigate = useNavigate();
-
     return (
-            <article className={classes.home_gallery_article} onClick={() => navigate(`/accommodation/${id}`)}>
+        <Link to={`/accommodation/${id}`}>
+            <article className={classes.home_gallery_article}>
                 <img src={cover} alt={title}></img>
                 <header className={classes.home_gallery_article_header}>
                     <h2>{title}</h2>
                 </header>
             </article>
+        </Link>
     );
 }
 
