@@ -11,6 +11,7 @@ body{
 }
 
 .accommodation{
+    flex-grow: 1;
     margin: 0rem 6.25rem 0rem 6.25rem;
 }
 

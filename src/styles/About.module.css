@@ -3,6 +3,10 @@
 
 /*======= HERO BANNER =======*/
 
+.about{
+    flex-grow: 1;
+}
+
 .about_header{
     height: 13.938rem;
     overflow: hidden;
