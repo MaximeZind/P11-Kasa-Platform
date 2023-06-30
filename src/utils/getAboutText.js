@@ -1,4 +1,4 @@
-import aboutText from '../data/aboutText.json';
+import aboutText from '../data/AboutText.json';
 
 export function getAboutText() {
     return aboutText;
